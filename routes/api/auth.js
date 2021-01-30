@@ -6,7 +6,6 @@ const jwt = require("jsonwebtoken");
 const config = require("config");
 
 const User = require("../../models/User");
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjAxNGRhODhkMjg2ZTIwNzY1ZWE2NTAxIn0sImlhdCI6MTYxMTk3OTQwMCwiZXhwIjoxNjEyMzM5NDAwfQ.w6u8XoizVWGjx06zRCAvgw07yGLqRQ2k4XUKluWFMJw
 
 //GET LOGGED IN USER
 router.get("/", auth, async (req, res) => {

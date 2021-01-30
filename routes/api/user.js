@@ -6,6 +6,7 @@ const config = require("config");
 
 const User = require("../../models/User");
 
+// ADD USER
 router.post("/", async (req, res) => {
   const { name, email, password } = req.body;
 
