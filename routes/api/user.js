@@ -33,7 +33,7 @@ router.post("/", async (req, res) => {
 
     jwt.sign(
       payload,
-      config.get("SECRET"),
+      process.env.SECRET,
       { expiresIn: 360000 },
       (err, token) => {
         if (err) throw err;
